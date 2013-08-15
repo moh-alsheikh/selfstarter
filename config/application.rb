@@ -20,5 +20,8 @@ module Selfstarter
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
     # --- Standard Rails Config ---
+    config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
+    config.i18n.default_locale = :ar
+    
   end
 end

@@ -10,34 +10,47 @@ project_goal: 100
 # If you want to edit the FAQ, head over to app/views/preorder/homepage/_faqs.html.erb
 
 # This'll be both the page title (<title></title>) and the name in the header
-product_name: "مشروعي"
+# إسم الشروع والذي سيظهر في الصفحة الرئيسية 
+product_name: "إسم المشروع"
 
 # An image showcasing your product -- it'll show up when you pin your product
 # It should be in app/assets/images
 product_image_path: "my-product-image.png"
 
 # The message on the preorder page, Lockitron's 
-value_proposition: "إبدء بجمع التمويل اللازم لمشروعك الآن"
+# العنوان الفرعي الذي سيظهر أسفل إسم المشروع في الصفحة الرئيسية
+
+value_proposition: "إبدء بجمع التمويل اللازم لمشروعك/منتجك الآن"
 
 # YouTube or Vimeo Video URL (The embed URL, without the query string options)
+# رابط الفيديو المعروض في الصفحة الرئيسية
 video_embed_url: "https://www.youtube.com/v/D1L3o88GKew"
 
 # Amazon settings -- you'll need an Amazon Payments account, sign up here --> http://bit.ly/SGksTv
 
 # To find your access key and secret key, head over to here --> http://bit.ly/R4I4ky (Follow that guide in the Seller Central page)
+# إعدادات خدمة الدفع من آمازون
+
 amazon_access_key: ""
 amazon_secret_key: ""
+
+# قيمة الإشتراك أو المساهمة في هذا المشروع
+
 price: 	150.00
 
 payment_description: " النص الذي سيشاهده المستخدم في صفحة آمازون عند الدفع"
 
 # Amazon limits how much we can charge people with their Multi-Use tokens.
 # You probably should add some leeway to account for international shipping
+# القيمة الإجمالية بالإضافة إلى أي مصاريف أخرى مثل قيمة الشحن
+
 charge_limit: 155.00
 
 # Stats settings
 
 # On Lockitron, it's "backers"
+# مسمى المشاركين يمكن تغييره إلى المساهمين- المتبرعين الخ
+
 primary_stat: "المشاركين"
 # This'll show up in the tweet as, "I'm forker number ..."
 primary_stat_verb: 'مشارك'
@@ -46,25 +59,37 @@ primary_stat_verb: 'مشارك'
 middle_reserve_text:  "إشترك الآن"
 
 # When the project should end
+# تاريخ إنتهاء الدعم للمشروع
+
 expiration_date: <%= DateTime.now + 29 %>
 
 # Text to show inside the progress bar, when the goal reaches/exceeds 100%
-progress_text: "Implemented"
+# النص الذي سيظهر عند إكتمال الدعم المطلوب
+
+progress_text: "تم جمع التمويل اللازم"
 
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships:  				"تاريخ بدء المشروع 01-01-2013"
+# تاريخ بدء المشروع - تاريخ رطلاق المنتج وشحن اول كمية 
+ships:	"تاريخ بدء المشروع 01-01-2013"
 
 # On Lockitron, it's "Reserve Now"
 call_to_action: "إشترك الآن"
+
 # On Lockitron, this is "Only $149 for a limited time"
+# المبلغ مع رمز العملة المستخدمة للدفع
+
 price_human: 		"$150"					
 
 # The paragraph below the price. You'd probably say something about how you're not going to charge them before it ships (so it's less risky).
-dont_give_them_a_reason_to_say_no: "You'll get this exact site. All you'll need to get started is a great product."
+# شرح مختصر يوضح الفائدة التي ستعود على المشترك من هذا المشروع أقنعهم بما لديك
+
+dont_give_them_a_reason_to_say_no: "شرح مختصر يوضح الفائدة التي ستعود على المشترك من هذا المشروع أقنعهم بما لديك !"
 
 # Social Stuff
+# إعدادات الشبكات الإجتاماعية
+
 facebook_app_id: "1234567890"
 # Tweets are prefixed with "I'm #{Settings.primary_stat} number X for #{Settings.product_name}"
 # Maybe mention something about your product vision -- e.g. "to replace keys with my phone"

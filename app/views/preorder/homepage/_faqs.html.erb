@@ -6,29 +6,30 @@
       <li class=''>
         <details class=''>
           <summary class=''>ماهي طريقة إعداد خدمة الدفع من آمازون ؟</summary>
-          <p>You'll need to <a href="https://payments.amazon.com/sdui/sdui/accountstatus">create an Amazon Seller Central account</a>. Afterwards, get your access key and secret key from the "Integration" tab on your AWS account. <a href="https://payments.amazon.com/sdui/sdui/helpTab/Checkout-by-Amazon/Advanced-Integration-Help/Using-Your-Access-Key">Click here for more info</a>.
+          <p>سوف تحتاج إلى الإشتراك في خدمة آمازون من الرابط  <a href="https://payments.amazon.com/sdui/sdui/accountstatus">وذلك بإنشاء حساب  Amazon Seller Central account</a>بعد الحصول على access key و secret key من قائمة "Integration" في حسابك على الآمازون AWS account. <a href="https://payments.amazon.com/sdui/sdui/helpTab/Checkout-by-Amazon/Advanced-Integration-Help/Using-Your-Access-Key">للحصول عى مزيد من المعلومات حول هذه الخدمة</a>.
           <br />
           <br />
-          Once you have your access key and secret key, head over to <code>config/settings.yml</code>. Change <code>amazon_access_key</code> and <code>amazon_secret_key</code> appropriately.</p>
+           بعد الحصول على access key و secret key يمكنك الدخول على الملف  <code>config/settings.yml</code>وتغيير كل من  <code>amazon_access_key</code> و <code>amazon_secret_key</code> بالشكل المناسب.</p>
         </details>
       </li>
       <li>
         <details class=''>
           <summary>هل يمكنني إستخدام موقع آخر يوفر خدمة الدفع ؟</summary>
-          <p>Of course. We haven't built in support for other providers, but we recommend that you take a look at <a href="https://stripe.com">Stripe</a> or <a href="https://wepay.com">WePay</a>.</p>
+          <p>بالطبع ولكن حاليا لم يتم دعم موفري خدمات أخرى يمكنك الإطلاع على كلا من  <a href="https://stripe.com">Stripe</a> or <a href="https://wepay.com">WePay</a>.</p>
         </details>
       </li>
      
 	  <li>
         <details class=''>
-          <summary>كيف أقوم بتغيير محتوي الأسئلة الشائعة</summary>
-          <p>The faq is a partial located in <code>app/views/preorder/homepage/_faq.html.erb</code> The <code>summary</code> tag is the title, the <code>p</code> is the body. Make sure to add an <code>li</code> tag for each FAQ entry.</p>
+          <summary>كيف أقوم بتغيير محتوي الأسئلة الشائعة ؟</summary>
+          <p>يمكن تغيير محتوى الأسئلة الشائعة من الملف<code>app/views/preorder/homepage/_faq.html.erb</code>  
+            <br/><code>summary</code> tag is the title, the <code>p</code> is the body. Make sure to add an <code>li</code> tag for each FAQ entry.</p>
         </details>
       </li>
       <li>
         <details class=''>
           <summary>كيف أقوم بتغييرإعدادات التطبيق (الصور - عنوان المنتج) ؟</summary>
-          <p>The best way is in <code>config/settings.yml</code>. It has variables for several different parts, the video, the product name, the call to action button ("Fork Now"), and several more.
+          <p>يمكن تغيير إعدادات التطبيق من ملف <code>config/settings.yml</code>ينقسم هذا الملف إلى عدة أقسام يحتوي كل قسم على إعدادت معينة مثلا اسم المنتج او المشروع ورابط الفيديو الذي يظهر في الصفحة الرئيسية والمبلغ المستهدف وتاريخ إطلاق المشروع 
           </p>
         </details>
       </li>
@@ -38,32 +39,36 @@
       <li>
         <details class=''>
           <summary> كيف يمكنني التعديل على ملفات CSS ؟ </summary>
-          <p>Head over to <code>app/assets/stylesheets/variables.css.scss</code>. It makes it easy to change around the elements used throughout the HTML.
+          <p>يمكن تغيير بعض الإعدادات  مثل ألوان الخطوط المختلفة - ألوان الخلفيات وغيرها بسهولة من ملف <code>app/assets/stylesheets/variables.css.scss</code>
           <br />
           <br />
-          Alternatively, you can dive right into the CSS, have a look at <code>app/assets/stylesheets/main.css.scss</code>.</p>
+          ايضا يمكن الحصول على التفاصيل من خلال ملف <code>app/assets/stylesheets/main.css.scss</code>.</p>
         </details>
       </li>
       <li class=''>
         <details class=''>
           <summary>لماذا قمتم ببناء هذا التطبيق ؟</summary>
-          <p>Hardware startups are less welcome on Kickstarter than they were 6 months ago. We needed to roll our own kickstarter, so we did. Other hardware startups probably will too, so we made it easier for them by open sourcing our way of doing it.</p>
+          <p><a href="http://selfstarter.us/" target="blank">http://selfstarter.us</a></p>
         </details>
       </li>
       <li class=''>
         <details class=''>
           <summary class=''>ماهي البرامج المستخدمة لبناء هذا التطبيق ؟</summary>
-          <p>It's a Ruby on Rails app that makes heavy use of SCSS, Kickstarter's wonderful <code>amazon_flex_pay</code> gem, and a hint of CoffeeScript.</p>
+          <p>تم بناء هذا التطبيق / الموقع بإستخدام ruby on rails وخدمة آمازون للدفع <code>amazon_flex_pay</code> gem, وعدة تقنيات أخرى .</p>
         </details>
       </li>
       <li class=''>
         <details class=''>
           <summary class=''>كيف أقوم بنشر هذا التطبيق ليعمل على الانترنت ؟</summary>
-          <p>We recommend using Heroku. We include a Procfile for you, so all you need to do is:
+          <p>من أسهل وأسرع الطرق لنشر هذا التطبيق هي إستخدام منصة heroku يمكنك إتباع الخطوات التالية :
           <p>
-            <p>Install the <a href="https://toolbelt.heroku.com/">Heroku Toolbelt</a></p>
-            <p>Run <code>heroku create</code> in Selfstarter's folder</code></p>
-            <p>Run <code>git push heroku master</code> in Selfstarter's folder</p>
+            <p>  إعداد Toolbelt  من الرابط <a href="https://toolbelt.heroku.com/" target="blank">Heroku Toolbelt</a></p>
+            <p>بعد الدخول على مجلد المشروع Selfstarter  نفذ الامر من Terminal <code>heroku create</code></p>
+            <p>نفذ الامر  <code>git push heroku master</code> ليتم نشر المشروع على منصة heroku </p>
+          </p>
+          <p>للمزيد عن منصة heroku يمكنك الإطلاع على الروابط التالية 
+            <p><a href="http://blog.msheikh.me/blog/heroku-cloud-application-platform/" target="blank">Heroku منصة عمل متكاملة للتطبيقات السحابية</a></p>
+            <p><a href="http://blog.msheikh.me/blog/deploy-rails-app-to-heroku/" target="blank">نشر تطبيق Ruby on Rails على Heroku</a></p>
           </p>
         </details>
       </li>

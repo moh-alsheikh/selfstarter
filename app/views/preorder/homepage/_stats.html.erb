@@ -17,12 +17,12 @@
       <% if Settings.expiration_date.present? %>
         <li class="stats" id="days">
           <%= distance_of_time_in_words_to_now(Settings.expiration_date).gsub(/\D/, "") %>
-          <span><%= distance_of_time_in_words_to_now(Settings.expiration_date).gsub(/\d/, "").gsub("about", "") %> باقي</span>
+          <span>المتبقي من  <%= distance_of_time_in_words_to_now(Settings.expiration_date).gsub(/\d/, "").gsub("about", "") %> </span>
         </li>
       <% else %>
         <li class="stats" id="days">
             &infin;
-            <span>days left</span>
+            <span>عدد الأيام المتبقية</span>
           </li>
       <% end %>
     </ul>
