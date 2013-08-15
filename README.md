@@ -1,6 +1,6 @@
 # Selfstarter ماهو
 تم بناء هذا المشروع لتسهيل إطلاق المشاريع التي تعتمد على التمويل الجماعي ، يمكنك إعداد هذا المشروع بكل سهولة فقط بتحميل المشروع ومن ثم تغيير الإعدادت من ملف  ```config/settings.yml```
-[See it in action](http://selfstarter.us)
+[يمكنك مشاهدة هذا التطبيق على الرابط](http://selfstarter.us)
 
 ## نظرة على المشروع
 
@@ -13,30 +13,37 @@ Selfstarter is a starting point. We made some specific choices with Selfstarter 
 * Selfstarter doesn't come with any authentication, administration, mailers or analytics tools. We recommend adding a basic set of these so that you can message backers and manage orders.
 
 ## كيف أبدء ؟
-*ملاحظة هامة: قبل البدء يجب التأكد من إعداد Ruby 1.9.2 أو نسخة أحدث ، وان يكون لديك بعض المعرفة باساسيات RubyGems
+#### ملاحظة هامة:
+ قبل البدء يجب التأكد من إعداد Ruby 1.9.2 أو نسخة أحدث
+  وان يكون لديك بعض المعرفة باساسيات RubyGems
 
-First you'll need to fork and clone this repo
+أولا قم بإنشاء نسخة من المشروع ومن ثم تحميلها على جهازك بإستخدام الامر التالي من Terminal
 
 ```bash
-git clone https://github.com/lockitron/selfstarter.git
+git clone https://github.com/moh-alsheikh/selfstarter.git
 ```
 
 Let's get all our dependencies setup:
+ثانيا تحميل RubyGems التي سنحتاج لها في هذا التطبيق بتنفيذ الامر التالي من Terminal
 ```bash
 bundle install --without production
 ```
 
-Now let's create the database:
+ثالثا تنفيذ الامر التالي لإنشاء قاعدة البيانات
 ```bash
 rake db:migrate
 ```
 
-Let's get it running:
+وأخيرا نقوم بتشغيل الخادم لمشاهدة المشروع بتنفيذ الامر التالي من Terminal 
 ```bash
 rails s
 ```
 
-### Customizing
+يمكننا الآن تصفح التطبيق من الرابط التالي 
+
+[http://0.0.0.0:3000](http://0.0.0.0:3000)
+
+### التعديل على المشروع 
 
 While it is *just* a skeleton, we did make it a little quicker to change around things like your product name, the colors, pricing, etc.
 
@@ -58,7 +65,7 @@ To dive into the code, open this file:
 app/controllers/preorder_controller.rb
 ```
 
-### Deploying to Production
+### نشر المشروع على منصة Heroku
 
 We recommend using Heroku, and we even include a ```Procfile``` for you. All you need to do is run:
 
@@ -69,7 +76,7 @@ git push heroku master
 heroku run rake db:migrate
 heroku open
 ```
-## Contributing
+## المشاركة والمساهمة في المشروع
 
 In it's current state, Selfstarter is very skeletal. We welcome your pull requests. If you're looking to contribute, here are some good starting points.
 
@@ -79,13 +86,13 @@ Using Amazon FPS will send users a notification when they place an order, howeve
 
 Something that we built into Lockitron.com was "Remind Me" functionality. The idea behind this is that you can capture potential backers and notify them near the end of your campaign that they should reserve your product. We have no data on this yet, however, it seems to be part of why Kickstarter campaigns pick up a lot of steam in their final hours.
 
-### Reporting
+### التقارير
 
 There is no admin panel with Selfstarter. This could be useful when the project's funding time is over and you want to export your orders elsewhere.
 
 Relatedly, some analytics would be nice. It'd be good to know how many reservations you receive over time, as well as the specifics of each order. Customers may have questions or might want to modify their order after they've placed it.
 
-### Alternate Payment Processors
+### موفري خدمات الدفع 
 
 Amazon Payments works great for us, but it may not work out for everyone. If you'd rather use Stripe, WePay, or any other payment processor, feel free to send out a pull request.
 
