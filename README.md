@@ -1,4 +1,3 @@
-<center>
 # Selfstarter ماهو
 تم بناء هذا المشروع لتسهيل إطلاق المشاريع التي تعتمد على التمويل الجماعي ، يمكنك إعداد هذا المشروع بكل سهولة فقط بتحميل المشروع ومن ثم تغيير الإعدادت من ملف  ```config/settings.yml```
 [يمكنك مشاهدة هذا التطبيق على الرابط](http://selfstarter.us)
@@ -14,18 +13,18 @@ Selfstarter is a starting point. We made some specific choices with Selfstarter 
 * Selfstarter doesn't come with any authentication, administration, mailers or analytics tools. We recommend adding a basic set of these so that you can message backers and manage orders.
 
 ## كيف أبدء ؟
-#### ملاحظة هامة:
- قبل البدء يجب التأكد من إعداد Ruby 1.9.2 أو نسخة أحدث
-  وان يكون لديك بعض المعرفة باساسيات RubyGems
+#### ملاحظة هامة: قبل البدء يجب التأكد من إعداد
+* Ruby 1.9.2 or later
+* توفر بعض المعرفة بأساسيات RubyGems
 
-أولا قم بإنشاء نسخة من المشروع ومن ثم تحميلها على جهازك بإستخدام الامر التالي من Terminal
+أولا  قم بإنشاء نسخة من المشروع ومن ثم تحميلها على جهازك بإستخدام الامر التالي من
 
 ```bash
 git clone https://github.com/moh-alsheikh/selfstarter.git
 ```
 
-Let's get all our dependencies setup:
-ثانيا تحميل RubyGems التي سنحتاج لها في هذا التطبيق بتنفيذ الامر التالي من Terminal
+Terminal ثانيا تحميل الجيمات او المكتبات التي سنحتاج لها في هذا التطبيق بتنفيذ الامر التالي 
+
 ```bash
 bundle install --without production
 ```
@@ -35,7 +34,8 @@ bundle install --without production
 rake db:migrate
 ```
 
-وأخيرا نقوم بتشغيل الخادم لمشاهدة المشروع بتنفيذ الامر التالي من Terminal 
+Terminal وأخيرا نقوم بتشغيل الخادم لمشاهدة المشروع بتنفيذ الامر التالي من  
+
 ```bash
 rails s
 ```
@@ -66,7 +66,7 @@ To dive into the code, open this file:
 app/controllers/preorder_controller.rb
 ```
 
-### نشر المشروع على منصة Heroku
+### Heroku نشر المشروع على منصة 
 
 We recommend using Heroku, and we even include a ```Procfile``` for you. All you need to do is run:
 
@@ -101,5 +101,4 @@ Amazon Payments works great for us, but it may not work out for everyone. If you
 
 There aren't any tests yet. Tests are very welcome!
 
-</center>
 
