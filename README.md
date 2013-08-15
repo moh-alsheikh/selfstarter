@@ -1,3 +1,4 @@
+<center>
 # Selfstarter ماهو
 تم بناء هذا المشروع لتسهيل إطلاق المشاريع التي تعتمد على التمويل الجماعي ، يمكنك إعداد هذا المشروع بكل سهولة فقط بتحميل المشروع ومن ثم تغيير الإعدادت من ملف  ```config/settings.yml```
 [يمكنك مشاهدة هذا التطبيق على الرابط](http://selfstarter.us)
@@ -100,4 +101,5 @@ Amazon Payments works great for us, but it may not work out for everyone. If you
 
 There aren't any tests yet. Tests are very welcome!
 
+</center>
 
