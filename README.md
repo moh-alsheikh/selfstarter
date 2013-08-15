@@ -17,7 +17,7 @@ Selfstarter is a starting point. We made some specific choices with Selfstarter 
 * Ruby 1.9.2 or later
 * توفر بعض المعرفة بأساسيات RubyGems
 
-أولا  قم بإنشاء نسخة من المشروع ومن ثم تحميلها على جهازك بإستخدام الامر التالي من
+Terminal أولا  قم بإنشاء نسخة من المشروع ومن ثم تحميلها على جهازك بإستخدام الامر التالي من
 
 ```bash
 git clone https://github.com/moh-alsheikh/selfstarter.git
@@ -48,19 +48,22 @@ rails s
 
 While it is *just* a skeleton, we did make it a little quicker to change around things like your product name, the colors, pricing, etc.
 
-To change around the product name, tweet text, and more, open this file:
+يمكن تغيير إعدادات التطبيق من ملف 
 
 ```
 config/settings.yml
 ```
 
-To change around the colors and fonts, open this file:
+ينقسم الملف إلى عدة أقسام يحتوي كل قسم على إعدادت معينة مثلا اسم المنتج او المشروع ورابط الفيديو الذي يظهر في الصفحة الرئيسية والمبلغ المستهدف وتاريخ إطلاق المشروع .
+
+
+يمكن تغيير بعض الإعدادات مثل ألوان الخطوط المختلفة - ألوان الخلفيات وغيرها بسهولة من ملف
 
 ```
 app/assets/stylesheets/variables.css.scss
 ```
 
-To dive into the code, open this file:
+يمكن الإطلاع على كود المشروع من الملف
 
 ```
 app/controllers/preorder_controller.rb
@@ -69,6 +72,8 @@ app/controllers/preorder_controller.rb
 ### Heroku نشر المشروع على منصة 
 
 We recommend using Heroku, and we even include a ```Procfile``` for you. All you need to do is run:
+
+Terminal من أسهل وأسرع الطرق لنشر هذا التطبيق هي إستخدام منصة هيروكو وذلك بتنفيذ الاوامر التالية من 
 
 ```bash
 gem install heroku
@@ -79,26 +84,16 @@ heroku open
 ```
 ## المشاركة والمساهمة في المشروع
 
-In it's current state, Selfstarter is very skeletal. We welcome your pull requests. If you're looking to contribute, here are some good starting points.
+....
 
-### Email Updates
-
-Using Amazon FPS will send users a notification when they place an order, however, it's nice to notify people when they place an order. 
-
-Something that we built into Lockitron.com was "Remind Me" functionality. The idea behind this is that you can capture potential backers and notify them near the end of your campaign that they should reserve your product. We have no data on this yet, however, it seems to be part of why Kickstarter campaigns pick up a lot of steam in their final hours.
 
 ### التقارير
 
-There is no admin panel with Selfstarter. This could be useful when the project's funding time is over and you want to export your orders elsewhere.
-
-Relatedly, some analytics would be nice. It'd be good to know how many reservations you receive over time, as well as the specifics of each order. Customers may have questions or might want to modify their order after they've placed it.
+..
 
 ### موفري خدمات الدفع 
 
-Amazon Payments works great for us, but it may not work out for everyone. If you'd rather use Stripe, WePay, or any other payment processor, feel free to send out a pull request.
 
-### Tests
 
-There aren't any tests yet. Tests are very welcome!
 
 
