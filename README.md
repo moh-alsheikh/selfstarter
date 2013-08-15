@@ -1,9 +1,8 @@
-# Selfstarter
-Selfstarter makes it easy to roll your own crowdfunding site. To get started, fork this repository and change around ```config/settings.yml``` to suit your needs.
-
+# Selfstarter ماهو
+تم بناء هذا المشروع لتسهيل إطلاق المشاريع التي تعتمد على التمويل الجماعي ، يمكنك إعداد هذا المشروع بكل سهولة فقط بتحميل المشروع ومن ثم تغيير الإعدادت من ملف  ```config/settings.yml```
 [See it in action](http://selfstarter.us)
 
-## Background
+## نظرة على المشروع
 
 After a [rejection from Kickstarter](http://techcrunch.com/2012/10/07/the-story-of-lockitron-crowdfunding-without-kickstarter/), we decided to follow in the footsteps of [App.net](https://app.net/) and make our own crowdfunding site for [Lockitron](https://lockitron.com). We've been absolutely blown away by the response. As a first step in what will hopefully be a long history of giving back, we have decided to open source the crowdfunding platform that got us here. Please send questions, comments, or concerns to [hello@lockitron.com](mailto:hello@lockitron.com)!
 
@@ -13,8 +12,8 @@ Selfstarter is a starting point. We made some specific choices with Selfstarter 
 * We collect multi-use tokens from customers with Amazon Payments - this let's us collect payment information without charging the customer until we are ready to ship
 * Selfstarter doesn't come with any authentication, administration, mailers or analytics tools. We recommend adding a basic set of these so that you can message backers and manage orders.
 
-## Getting Started
-*Note: This assumes you have Ruby 1.9.2 or later installed properly and have a basic working knowledge of how to use RubyGems*
+## كيف أبدء ؟
+*ملاحظة هامة: قبل البدء يجب التأكد من إعداد Ruby 1.9.2 أو نسخة أحدث ، وان يكون لديك بعض المعرفة باساسيات RubyGems
 
 First you'll need to fork and clone this repo
 
