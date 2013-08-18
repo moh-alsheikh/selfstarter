@@ -1,10 +1,15 @@
 # Selfstarter ماهو
 تم بناء هذا المشروع لتسهيل إطلاق المشاريع التي تعتمد على التمويل الجماعي ، يمكنك إعداد هذا المشروع بكل سهولة فقط بتحميل المشروع ومن ثم تغيير الإعدادت من ملف  ```config/settings.yml```
-يمكن مشاهدة هذا التطبيق من الروابط التالية
+يمكن مشاهدة نسخة العرض لهذا التطبيق من الرابط التالي
 <br/>
-(http:/www/)[يمكن مشاهدة التطبيق باللغة العربية على الرابط ]
+<a href="http://arselfstarter.herokuapp.com" target="blank">http://arselfstarter.herokuapp.com</a>
+
+
 <br/>
-(http://selfstarter.us)[الموقع الرئيسي]
+أو من الموقع الرئيسي
+
+<a href="http://selfstarter.us" target="blank">http://selfstarter.us</a>
+
 
 ## نظرة على المشروع
 ...
