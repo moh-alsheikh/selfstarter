@@ -13,6 +13,10 @@ project_goal: 100
 # إسم الشروع والذي سيظهر في الصفحة الرئيسية 
 product_name: "مشروعي"
 
+
+#عنوان الموقع الذي سيعمل عليه هذا التطبيق
+project_host: "arselfstarter.herokuapp.com"
+  
 # An image showcasing your product -- it'll show up when you pin your product
 # It should be in app/assets/images
 product_image_path: "my-product-image.png"

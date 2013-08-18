@@ -10,7 +10,6 @@
 
 <a href="http://selfstarter.us" target="blank">http://selfstarter.us</a>
 
-
 ## نظرة على المشروع
 ...
 

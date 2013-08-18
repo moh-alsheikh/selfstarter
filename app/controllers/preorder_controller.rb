@@ -21,12 +21,11 @@ class PreorderController < ApplicationController
     
     if Rails.env.production?
       #redirect_to @pipeline.url("#{request.scheme}://#{request.host}/preorder/postfill")
-      req_url = "arselfstarter.herokuapp.com/preorder/postfill"
+      req_url = Settings.project_host + "/preorder/postfill"
     else
        #redirect_to @pipeline.url("#{request.scheme}://#{request.host}/preorder/postfill")
        req_url = "0.0.0.0:3000/preorder/postfill"
     end
-    
     
     redirect_to @pipeline.url("#{request.scheme}://#{req_url}")
 
