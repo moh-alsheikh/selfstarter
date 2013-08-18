@@ -11,7 +11,7 @@ project_goal: 100
 
 # This'll be both the page title (<title></title>) and the name in the header
 # إسم الشروع والذي سيظهر في الصفحة الرئيسية 
-product_name: "إسم المشروع"
+product_name: "مشروعي"
 
 # An image showcasing your product -- it'll show up when you pin your product
 # It should be in app/assets/images
@@ -31,14 +31,14 @@ video_embed_url: "https://www.youtube.com/v/D1L3o88GKew"
 # To find your access key and secret key, head over to here --> http://bit.ly/R4I4ky (Follow that guide in the Seller Central page)
 # إعدادات خدمة الدفع من آمازون
 
-amazon_access_key: ""
-amazon_secret_key: ""
+amazon_access_key: "AKIAJN4V6JH7AWLNOJGA"
+amazon_secret_key: "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"
 
 # قيمة الإشتراك أو المساهمة في هذا المشروع
 
 price: 	150.00
 
-payment_description: " النص الذي سيشاهده المستخدم في صفحة آمازون عند الدفع"
+payment_description: " سوف يتم خصم هذا المبلغ كقيمة للإشتراك أو المساهمة في المشروع" # + product_name:
 
 # Amazon limits how much we can charge people with their Multi-Use tokens.
 # You probably should add some leeway to account for international shipping
@@ -53,7 +53,7 @@ charge_limit: 155.00
 
 primary_stat: "المشاركين"
 # This'll show up in the tweet as, "I'm forker number ..."
-primary_stat_verb: 'مشارك'
+primary_stat_verb: 'المشارك'
 
 # The 2nd call to action button, towards the middle-ish of the page
 middle_reserve_text:  "إشترك الآن"

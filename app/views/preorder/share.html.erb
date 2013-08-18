@@ -1,9 +1,10 @@
 <div class="gray_background" id='share_container'>
   <div class="wrapper center" id="congrats">
     <h2>
-      Hooray! You've just reserved a <%= Settings.product_name %>!
+      مبروك! لقد أتممت عملية الإشتراك والمساهمة في <%= Settings.product_name %>!
     </h2>
-    <p>Congratulations, you're <%= Settings.primary_stat_verb %> number <span id="backer_number"><%= number_with_delimiter @order.number, :delimiter => "," %></span>,  in supporting <%= Settings.product_name %>. Share the great news!</p>
+    <p>مبروك أنت  <%= Settings.primary_stat_verb %> رقم  <span id="backer_number"><%= number_with_delimiter @order.number, :delimiter => "," %></span> , في <%= Settings.product_name %><br>
+      يمكنك مشاركة هذا الخبر الرائع عبر تويتر , فيسبوك !</p>
     <br />
     <br />
     <div id="share" class="clearfix">
@@ -17,7 +18,7 @@
         <%= like_button(450, true) %>
       </div>
     </div>
-     <div id="order_id">Reservation ID: <%= @order.uuid %>. You can bookmark or print this page for your records.</div>
+     <div id="order_id"> رقم الطلب / الحجز : <%= @order.uuid %>. يمكنك طباعة أو حفظ معلومات هذه الصفحة لتبقى كمرجع لديك.</div>
   </div>
 </div>
 

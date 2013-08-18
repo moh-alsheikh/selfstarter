@@ -19,10 +19,25 @@ $link_color: #0008D6;
 $text_shadow: 0 1px 0px #fff;
 $font_size: 22px;
 
+
+
+@font-face {
+  font-family: 'Kufi';
+  src: asset-url('DroidKufi-Regular.ttf', font)  format('truetype')  
+}
+
+
+
 // Lockitron uses ProximaNova Regular, but that costs money, so we're defaulting to Helveitca Neue instead.
-$primary_font:   "Helvetica Neue";
-$secondary_font: "Helvetica";
-$tertiary_font:  "Arial";
+$primary_font:   "Kufi";
+$secondary_font: "Kufi";
+$tertiary_font:  "Kufi";
+
+
+
+//@font-face { font-family: DroidKufi; src: url('DroidKufi-Regular.ttf');}
+
+
 
 // Gray background is a gradient -- top == 0%, middle == 50%, bottom == 100%
 $gray_background_top_color: 	 #F6F6F6;

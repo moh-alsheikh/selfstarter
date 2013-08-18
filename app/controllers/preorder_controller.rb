@@ -17,8 +17,17 @@ class PreorderController < ApplicationController
     # From there, we save it, and voila, we got ourselves a preorder!
 
     @pipeline = AmazonFlexPay.multi_use_pipeline(@order.uuid, :transaction_amount => Settings.price, :global_amount_limit => Settings.charge_limit, :collect_shipping_address => "True", :payment_reason => Settings.payment_description)
-    #redirect_to @pipeline.url("#{request.scheme}://#{request.host}/preorder/postfill")
-    req_url = "0.0.0.0:3000/preorder/postfill"
+    
+    
+    if Rails.env.production?
+      #redirect_to @pipeline.url("#{request.scheme}://#{request.host}/preorder/postfill")
+      req_url = "arselfstarter.herokuapp.com/preorder/postfill"
+    else
+       #redirect_to @pipeline.url("#{request.scheme}://#{request.host}/preorder/postfill")
+       req_url = "0.0.0.0:3000/preorder/postfill"
+    end
+    
+    
     redirect_to @pipeline.url("#{request.scheme}://#{req_url}")
 
   end
